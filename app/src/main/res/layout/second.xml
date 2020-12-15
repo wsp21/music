@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1E4E4">
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="music"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:background="#F33505"
+        android:gravity="center_vertical">
+    </TextView>
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/back"
+        android:scaleType="centerInside"
+        android:background="#0000"
+        android:layout_alignParentLeft="true"
+        android:onClick="toback"
+        >
+
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="70dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/pic"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_below="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="name45645646445646"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/cur_time"
+        android:text="00:00"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tol_time"
+        android:text="00:00"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+    </TextView>
+    <SeekBar
+        android:id="@+id/seekbar_time"
+        android:layout_below="@+id/text_name"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/cur_time"
+        android:layout_toLeftOf="@+id/tol_time"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        />
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_below="@+id/seekbar_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_random"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/random"
+            android:scaleType="centerInside"
+            android:background="#0000">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_last"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/last"
+            android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/btn_random"
+            android:background="#0000"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/play"
+            android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/btn_last"
+            android:background="#0000">
+
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/next"
+            android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/btn_pause"
+            android:background="#0000">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_loop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/loop"
+            android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/btn_next"
+            android:background="#0000">
+
+        </ImageButton>
+    </RelativeLayout>
+
+
+</RelativeLayout>
